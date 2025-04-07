@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edson Beltrán - Fotógrafo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-label,
+.dark-mode .form-select {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border-color: #555;
+}
+  footer a.text-white:hover {
+    color: #0dcaf0; /* Un celeste moderno de Bootstrap */
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+  }
+
+  footer a.text-white {
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+    body {
+      padding-top: 60px;
+      background-color: #f4f4f4;
+    }
+    .profile-img {
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Edemibel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobremi">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#galeria">Galería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <button id="modoToggle" class="btn btn-outline-light ms-3">🌙 Modo oscuro</button>
+        </li>
+      </ul>      
+    </div>
+  </div>
+</nav>
+  <!-- Contenido principal -->
+  <div id="inicio" class="container text-center mt-5">
+    <img src="img/edson e beltran.jpg" alt="Foto de Edson" class="profile-img mb-3" />
+    <h1>¡Hola, soy Edson!</h1>
+    <p class="lead">Apasionado por la fotografía, el arte y la creación web.</p>
+    <a href="#" class="btn btn-primary">Ver mi trabajo</a>
+    <!-- Sobre mí -->
+<section id="sobremi" class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+      <img src="img/edson e beltran.jpg" alt="Edson Beltrán" class="img-fluid rounded-circle shadow">
+    </div>
+    <div class="col-md-8">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Hola! Soy Edson Beltrán, un apasionado de la fotografía con alma artística y ojo detallista.
+        Me encanta capturar momentos únicos, jugar con la luz y contar historias visuales que conmueven.
+        Desde retratos íntimos hasta paisajes urbanos, cada toma es una expresión de mi estilo y mi sensibilidad.
+      </p>
+      <p>
+        Mi amor por la fotografía comenzó hace varios años y desde entonces no he parado de aprender, experimentar y crear.
+        También me interesa el diseño web, y esta página es parte de mi crecimiento como artista digital.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Slider de Imágenes con controles -->
+<section id="slider" class="container mt-5">
+  <h2 class="text-center mb-4">Mi Trabajo</h2>
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <!-- Imágenes -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/A3.jpg" class="d-block w-100" alt="Trabajo 1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/A2.jpg" class="d-block w-100" alt="Trabajo 2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/A4.jpg" class="d-block w-100" alt="Trabajo 3">
+      </div>
+    </div>
+    <!-- Servicios -->
+<section id="servicios" class="container mt-5">
+  <h2 class="text-center mb-4">Servicios</h2>
+  <div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow rounded-4 p-3">
+        <div class="mb-3">
+          <i class="bi bi-camera2" style="font-size: 2rem;"></i>
+        </div>
+        <h5>Sesiones Fotográficas</h5>
+        <p>Retratos personales, sesiones familiares, books profesionales y más.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow rounded-4 p-3">
+        <div class="mb-3">
+          <i class="bi bi-image" style="font-size: 2rem;"></i>
+        </div>
+        <h5>Edición Profesional</h5>
+        <p>Retoque digital, corrección de color y montaje creativo personalizado.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow rounded-4 p-3">
+        <div class="mb-3">
+          <i class="bi bi-printer" style="font-size: 2rem;"></i>
+        </div>
+        <h5>Impresiones</h5>
+        <p>Fotografías impresas en alta calidad en distintos tamaños y acabados.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+</section>
+
+
+    <!-- Galería de Fotos -->
+    <div id="galeria" class="container mt-5">
+  <h2 class="text-center mb-4">Mi Galería</h2>
+  <div class="row g-2"> <!-- Usamos g-2 para menos espacio entre columnas -->
+    <div class="col-6 col-md-4">
+      <img src="img/E1.jpg" class="img-fluid rounded shadow-sm" alt="Foto 1">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="img/E2.jpg" class="img-fluid rounded shadow-sm" alt="Foto 2">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="img/E3.jpg" class="img-fluid rounded shadow-sm" alt="Foto 3">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="img/E4.jpg" class="img-fluid rounded shadow-sm" alt="Foto 4">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="img/E5.jpg" class="img-fluid rounded shadow-sm" alt="Foto 5">
+    </div>
+    <div class="col-6 col-md-4">
+      <img src="img/E6.jpg" class="img-fluid rounded shadow-sm" alt="Foto 6">
+    </div>
+  </div>
+</div>
+
+  <!-- Sección de Contacto -->
+  <div id="contacto" class="container mt-5 mb-5">
+  <h2 class="text-center mb-4">Contáctame</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form action="https://formspree.io/f/mdkepazw" method="POST" class="p-4 border rounded bg-white shadow">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Tu nombre" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="tu@email.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" class="form-control" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+ <!-- Footer -->
+<footer class="bg-dark text-white mt-5 py-4">
+  <div class="container text-center">
+    <p class="mb-2">&copy; 2025 Edson Beltrán | Todos los derechos reservados</p>
+    <div class="mb-3">
+      <a href="https://facebook.com/Edemibel" class="text-white me-3" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://instagram.com/Edemibel" class="text-white me-3" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/+59173683825" class="text-white" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+    <small>Diseñado por Edson Beltrán</small>
+  </div>
+</footer>
+
+
+<script>
+  const toggleBtn = document.getElementById('modoToggle');
+  const body = document.body;
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    if (body.classList.contains('dark-mode')) {
+      toggleBtn.textContent = '☀️ Modo claro';
+    } else {
+      toggleBtn.textContent = '🌙 Modo oscuro';
+    }
+  });
+</script>
+
+</body>
+</html>
